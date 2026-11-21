@@ -1,0 +1,1 @@
+import{i as e,r as t}from"./lifecycle.5V_Me_yf.js";import{r as n}from"./factory-loop.Cl4fQ1Pq.js";e(()=>{let e=document.querySelector(`.factory-loop`);return e&&t()?n(e):void 0});

@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Starter Figma → WordPress · Studium przypadku · Łukasz Moszczyński</title><meta name="description" content="Narzędzie, które czyta plik strony w Figmie zbudowany z mojej biblioteki komponentów i zamienia go w działającą lokalną stronę WordPress z komponentami i tokenami marki z design systemu."><link rel="icon" href="/portfolio-preview/favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://lukaszmoszczynski.github.io/portfolio-preview/pl/work/figma-to-wordpress/"><link rel="alternate" hreflang="en" href="https://lukaszmoszczynski.github.io/portfolio-preview/work/figma-to-wordpress/"><link rel="alternate" hreflang="pl" href="https://lukaszmoszczynski.github.io/portfolio-preview/pl/work/figma-to-wordpress/"><link rel="alternate" hreflang="x-default" href="https://lukaszmoszczynski.github.io/portfolio-preview/work/figma-to-wordpress/"><meta property="og:url" content="https://lukaszmoszczynski.github.io/portfolio-preview/pl/work/figma-to-wordpress/"><meta property="og:title" content="Starter Figma → WordPress · Studium przypadku · Łukasz Moszczyński"><meta property="og:description" content="Narzędzie, które czyta plik strony w Figmie zbudowany z mojej biblioteki komponentów i zamienia go w działającą lokalną stronę WordPress z komponentami i tokenami marki z design systemu."><meta property="og:image" content="https://lukaszmoszczynski.github.io/portfolio-preview/og.png"><meta property="og:type" content="website"><meta property="og:locale" content="pl_PL"><meta name="twitter:card" content="summary_large_image"><script>
+      (function () {
+        // `current`: the page being replaced on a client-side navigation. When storage can't be
+        // read, its theme and pause choice carry over, so they last until the next full load.
+        var apply = function (target, current) {
+          var stored = null;
+          var paused = false;
+          try {
+            stored = localStorage.getItem('theme');
+            // "Pause animations" (motion-pause.ts): remembered across pages and visits.
+            paused = localStorage.getItem('motion-paused') === '1';
+          } catch (error) {
+            if (current) {
+              stored = current.dataset.theme;
+              paused = current.classList.contains('motion-paused');
+            }
+          }
+          // Dark unless the reader chose light (resolveTheme in theme.ts); the OS setting is not consulted.
+          target.dataset.theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
+          target.classList.toggle('motion-paused', paused);
+          // `js`: scripts run, so CSS may hide controls that only JS can reach elsewhere (the menu).
+          target.classList.add('js');
+        };
+        // `motion`: animations may run, so CSS shows their start states from the first paint.
+        // `init-pending`: removed by lifecycle.ts once every section has set itself up.
+        // The timer is a safety net: if a script fails, nothing stays hidden for more than 3 s.
+        var timer;
+        var mark = function (target) {
+          if (!matchMedia('(prefers-reduced-motion: reduce)').matches) target.classList.add('motion');
+          target.classList.add('init-pending');
+          clearTimeout(timer);
+          timer = setTimeout(function () {
+            document.documentElement.classList.remove('init-pending');
+          }, 3000);
+        };
+        apply(document.documentElement);
+        mark(document.documentElement);
+        document.addEventListener('astro:before-swap', function (event) {
+          apply(event.newDocument.documentElement, document.documentElement);
+          mark(event.newDocument.documentElement);
+        });
+      })();
+    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/portfolio-preview/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CKq7OsbX.js"></script><link rel="stylesheet" href="/portfolio-preview/_astro/BaseLayout.Bq7gD_m2.css"><style>.link-keep{white-space:nowrap}
+</style><link rel="stylesheet" href="/portfolio-preview/_astro/ProjectVisual.CrQejD8I.css"><link rel="stylesheet" href="/portfolio-preview/_astro/CaseStudyLayout.BWbJ4TAo.css"><style>[data-astro-transition-scope="astro-d2z2izwc-1"] { view-transition-name: visual-figma-to-wordpress; }@layer astro { ::view-transition-old(visual-figma-to-wordpress) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(visual-figma-to-wordpress) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(visual-figma-to-wordpress) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(visual-figma-to-wordpress) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body data-cursor-open="Otwórz" data-cursor-drag="Przeciągnij"><div data-astro-transition-persist="background" class="background" aria-hidden="true"><div class="grid-layer"></div><div class="light-layer"><div class="glow glow-a"></div><div class="glow glow-b"></div></div></div><script type="module" src="/portfolio-preview/_astro/Background.astro_astro_type_script_index_0_lang.DjlapQKC.js"></script><div data-astro-transition-persist="cursor" class="cursor" aria-hidden="true"><div class="cursor-ring"><span class="cursor-shape"></span><span class="cursor-ticks"><i></i><i></i><i></i><i></i></span><span class="cursor-label"></span></div><div class="cursor-dot"></div></div><script type="module" src="/portfolio-preview/_astro/Cursor.astro_astro_type_script_index_0_lang.DmizTz1A.js"></script><a class="skip-link" href="#main">Przejdź do treści</a><header class="bar"><!-- Wordmark: the full name on every width (phones keep only it and the menu button). The name is the visible text plus ", home" (WCAG 2.5.3). --><a class="logo" href="/portfolio-preview/pl/"><span class="logo-text fx-underline"><span class="logo-full">Łukasz Moszczyński</span><span class="visually-hidden">, strona główna</span></span></a><div class="bar-tools"><!--
+  Segmented EN | PL: the whole pill is one link to the other language (works without JS).
+  The link's text is the target language. The current language under the thumb is a state
+  marker drawn from data-label (CSS), so the name "PL – Zmień język na polski" holds all
+  of the link's text (WCAG 2.5.3 label in name).
+--><a class="seg lang-seg" data-current="pl" href="/portfolio-preview/work/figma-to-wordpress/" hreflang="en" lang="en" data-lang-switch aria-label="EN – Switch language to English"><span class="seg-thumb" aria-hidden="true"></span><span class="seg-option is-target" lang="en">EN</span><span class="seg-option is-current" data-label="PL" aria-hidden="true"></span></a><button type="button" class="seg theme-seg" role="switch" aria-checked="false" data-theme-toggle aria-label="Tryb ciemny"><span class="seg-thumb" aria-hidden="true"></span><span class="seg-option" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><circle cx="12" cy="12" r="4.5" fill="currentColor"></circle><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></g></svg></span><span class="seg-option" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z" fill="currentColor"></path></svg></span></button><script type="module" src="/portfolio-preview/_astro/ThemeToggle.astro_astro_type_script_index_0_lang.DpAi-Aay.js"></script><button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu"><span class="menu-lines" aria-hidden="true"><span></span><span></span><span></span></span><span class="menu-toggle-text">Menu</span></button></div><noscript><!-- Without JS the menu cannot open: the same links as a plain row. --><style>.menu-toggle { display: none !important }</style><nav class="nav-plain" aria-label="Główna"><a href="/portfolio-preview/pl/#work">Projekty</a><a href="/portfolio-preview/pl/#contact">Kontakt</a><a href="/portfolio-preview/pl/work/">Wszystkie projekty</a></nav></noscript><!-- Not aria-modal: the close button lives in the header bar, outside the panel. header.ts makes the page behind inert instead. --><div class="site-menu" id="site-menu" role="dialog" aria-label="Menu" hidden><nav class="site-menu-in wrap" aria-label="Główna"><ul class="menu-main"><li><a class="menu-link" href="/portfolio-preview/pl/#work"><span class="menu-link-text">Projekty</span></a></li><li><a class="menu-link" href="/portfolio-preview/pl/#contact"><span class="menu-link-text">Kontakt</span></a></li><li><a class="menu-link" href="/portfolio-preview/pl/work/"><span class="menu-link-text">Wszystkie projekty</span></a></li></ul><p class="menu-sub">Case studies</p><ul class="menu-projects"><li><a href="/portfolio-preview/pl/work/qa-agent/">Agent QA</a></li><li><a href="/portfolio-preview/pl/work/human-in-the-loop/">Człowiek w pętli</a></li><li><a href="/portfolio-preview/pl/work/design-system/">Design system</a></li><li><a href="/portfolio-preview/pl/work/multi-brand-sites/">Strony wielu marek</a></li><li><a href="/portfolio-preview/pl/work/wordpress-shop/">Sklep WordPress</a></li><li><a href="/portfolio-preview/pl/work/figma-to-wordpress/">Figma → WordPress</a></li><li><a href="/portfolio-preview/pl/work/company-website/">Strona firmowa</a></li></ul><!-- The header's language and theme switches live here too: the header copies hide while the menu is open and on phones. --><div class="menu-tools" role="group" aria-label="Język, motyw i animacje"><!--
+  Segmented EN | PL: the whole pill is one link to the other language (works without JS).
+  The link's text is the target language. The current language under the thumb is a state
+  marker drawn from data-label (CSS), so the name "PL – Zmień język na polski" holds all
+  of the link's text (WCAG 2.5.3 label in name).
+--><a class="seg lang-seg" data-current="pl" href="/portfolio-preview/work/figma-to-wordpress/" hreflang="en" lang="en" data-lang-switch aria-label="EN – Switch language to English"><span class="seg-thumb" aria-hidden="true"></span><span class="seg-option is-target" lang="en">EN</span><span class="seg-option is-current" data-label="PL" aria-hidden="true"></span></a><button type="button" class="seg theme-seg" role="switch" aria-checked="false" data-theme-toggle aria-label="Tryb ciemny"><span class="seg-thumb" aria-hidden="true"></span><span class="seg-option" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><circle cx="12" cy="12" r="4.5" fill="currentColor"></circle><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></g></svg></span><span class="seg-option" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z" fill="currentColor"></path></svg></span></button><!--
+  "Pause animations" (WCAG 2.2.2). Pressed = paused. Hidden until motion-toggle.ts shows it:
+  without JS or with reduced motion nothing moves on its own, so there is nothing to pause.
+--><button type="button" class="motion-toggle motion-toggle-menu" aria-pressed="false" data-motion-toggle hidden><span class="motion-toggle-icon" aria-hidden="true"><i></i><i></i></span><span>Wstrzymaj animacje</span></button></div></nav></div></header><script type="module" src="/portfolio-preview/_astro/Header.astro_astro_type_script_index_0_lang.HfUWfXtG.js"></script><!-- tabindex -1: the skip link moves keyboard focus here, not only the scroll position. --><main id="main" class="wrap" tabindex="-1"><article class="case" aria-labelledby="case-title" data-astro-cid-iu2tt25f><header class="case-hero" data-astro-cid-iu2tt25f><div class="case-copy" data-astro-cid-iu2tt25f><a class="text-link case-back" href="/portfolio-preview/pl/work/" data-astro-cid-iu2tt25f="true"><span class="link-keep"><span class="link-arrow is-back">←</span> Wszystkie</span> projekty</a><p class="case-meta" data-astro-cid-iu2tt25f><span data-astro-cid-iu2tt25f>WordPress · Figma · automatyzacja</span></p><h1 id="case-title" data-astro-cid-iu2tt25f>Starter Figma → WordPress</h1><p class="case-summary" data-astro-cid-iu2tt25f>Narzędzie, które czyta plik strony w Figmie zbudowany z mojej biblioteki komponentów i zamienia go w działającą lokalną stronę WordPress z komponentami i tokenami marki z design systemu.</p><ul class="case-tags" aria-label="Tagi" data-astro-cid-iu2tt25f><li data-astro-cid-iu2tt25f>WordPress</li><li data-astro-cid-iu2tt25f>Figma</li><li data-astro-cid-iu2tt25f>Claude Code</li><li data-astro-cid-iu2tt25f>Docker</li><li data-astro-cid-iu2tt25f>Node.js</li><li data-astro-cid-iu2tt25f>Playwright</li></ul><ul class="case-links" aria-label="Linki" data-astro-cid-iu2tt25f><li data-astro-cid-iu2tt25f><a class="fx-pill" href="https://github.com/LukaszMoszczynski/wp-starter" target="_blank" rel="noopener noreferrer" data-astro-cid-iu2tt25f>Repozytorium na GitHubie <span class="fx-arrow" data-astro-cid-iu2tt25f><span data-astro-cid-iu2tt25f>↗</span><span aria-hidden="true" data-astro-cid-iu2tt25f>↗</span></span><span class="case-hidden" data-astro-cid-iu2tt25f> (otwiera się w nowej karcie)</span></a></li></ul></div><div data-astro-transition-scope="astro-d2z2izwc-1" class="project-visual" data-visual="figma-to-wordpress" aria-hidden="true" data-astro-cid-utabsd57><div class="project-screen v-figma-to-wordpress" data-astro-cid-utabsd57><span class="frame" style="inset: 12% 58% 12% 7%" data-astro-cid-utabsd57><i class="wp-source" style="inset: 6% 8% 70% 8%" data-astro-cid-utabsd57></i><i class="wp-source accent" style="inset: 36% 8% 40% 8%" data-astro-cid-utabsd57></i><i class="wp-source" style="inset: 66% 8% 6% 8%" data-astro-cid-utabsd57></i></span><svg class="arrow" viewBox="0 0 400 300" preserveAspectRatio="none" data-astro-cid-utabsd57><path d="M176 150 H222" data-astro-cid-utabsd57></path><path d="M212 140 L224 150 L212 160" data-astro-cid-utabsd57></path></svg><span class="shape page" style="inset: 12% 7% 12% 58%" data-astro-cid-utabsd57><i class="wp-block" style="inset: 6% 8% 70% 8%" data-astro-cid-utabsd57><b class="wp-skin" data-astro-cid-utabsd57></b></i><i class="wp-block accent" style="inset: 36% 8% 40% 8%" data-astro-cid-utabsd57><b class="wp-skin" data-astro-cid-utabsd57></b></i><i class="wp-block" style="inset: 66% 8% 6% 8%" data-astro-cid-utabsd57><b class="wp-skin" data-astro-cid-utabsd57></b></i></span><span class="label" style="left: 7%; top: 3%" data-astro-cid-utabsd57>Figma</span><span class="label" style="left: 58%; top: 3%" data-astro-cid-utabsd57>WordPress</span></div></div></header><div class="case-prose" data-astro-cid-iu2tt25f><h2 id="problem">Problem</h2>
+<p>Postawienie strony WordPress z projektu w Figmie zajmowało dni tej samej konfiguracji: Docker, wtyczki, tokeny, pierwsze bloki. Jeśli projekt jest zbudowany ze wspólnej biblioteki komponentów, większość tej pracy da się odczytać z samego pliku.</p>
+<h2 id="co-zbudowałem">Co zbudowałem</h2>
+<ul>
+<li><strong>Skill do Claude Code</strong>, <code>/new-site</code>, który czyta plik przez Figma MCP: strony i sekcje, komponenty z biblioteki, markę oraz funkcje takie jak sklep czy formularze.</li>
+<li><strong>Przepis</strong> (<code>site.recipe.json</code>), w którym zapisuje to, co znalazł. Nic nie powstaje, dopóki właściciel go nie potwierdzi.</li>
+<li><strong>Skrypty w Node</strong>, które z samego przepisu budują lokalną stronę WordPress w Dockerze, z <strong>komponentami design systemu i tokenami marki</strong>, wypełniają strony treścią i uruchamiają testy Playwright.</li>
+</ul>
+<h2 id="najważniejsze">Najważniejsze</h2>
+<ul>
+<li>Zatrzymuje się wcześnie i mówi dlaczego: brakujący komponent (z linkiem do Figmy), nieznana marka albo adresy stron, których WordPress nie przyjmie.</li>
+<li>Wtyczki są sprawdzane przed instalacją: lista zatwierdzonych, świeże aktualizacje i baza znanych podatności.</li>
+<li>Skrypty czytają tylko przepis i nie odpytują Figmy, więc stronę można odbudować bez Claude.</li>
+</ul>
+</div><nav class="case-next section-rule" aria-label="Następny projekt" data-astro-cid-iu2tt25f><a href="/portfolio-preview/pl/work/company-website/" rel="next" data-astro-cid-iu2tt25f><span class="case-next-label" data-astro-cid-iu2tt25f>Następny projekt</span><span class="case-next-title" data-astro-cid-iu2tt25f><span class="case-next-line" data-astro-cid-iu2tt25f><span class="case-next-name" data-astro-cid-iu2tt25f>Szybka statyczna strona firmowa</span> <span class="case-next-arrow" aria-hidden="true" data-astro-cid-iu2tt25f>→</span></span></span></a></nav></article></main><footer class="site-footer wrap" data-astro-cid-jo6i4kqk><p data-astro-cid-jo6i4kqk>© 2026 Łukasz Moszczyński</p><p data-astro-cid-jo6i4kqk>Zgodna z WCAG 2.2 AA</p><!--
+  "Pause animations" (WCAG 2.2.2). Pressed = paused. Hidden until motion-toggle.ts shows it:
+  without JS or with reduced motion nothing moves on its own, so there is nothing to pause.
+--><button type="button" class="motion-toggle motion-toggle-footer" aria-pressed="false" data-motion-toggle hidden><span class="motion-toggle-icon" aria-hidden="true"><i></i><i></i></span><span>Wstrzymaj animacje</span></button></footer></body></html><script type="module" src="/portfolio-preview/_astro/BaseLayout.astro_astro_type_script_index_0_lang.BnYb2nL2.js"></script>

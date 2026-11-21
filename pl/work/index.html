@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Projekty · Łukasz Moszczyński</title><meta name="description" content="Siedem projektów: agenci AI do QA i dostarczania zmian, design system, wielomarkowe strony sprzedażowe home.pl, sklepy na WordPressie i strony statyczne."><link rel="icon" href="/portfolio-preview/favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://lukaszmoszczynski.github.io/portfolio-preview/pl/work/"><link rel="alternate" hreflang="en" href="https://lukaszmoszczynski.github.io/portfolio-preview/work/"><link rel="alternate" hreflang="pl" href="https://lukaszmoszczynski.github.io/portfolio-preview/pl/work/"><link rel="alternate" hreflang="x-default" href="https://lukaszmoszczynski.github.io/portfolio-preview/work/"><meta property="og:url" content="https://lukaszmoszczynski.github.io/portfolio-preview/pl/work/"><meta property="og:title" content="Projekty · Łukasz Moszczyński"><meta property="og:description" content="Siedem projektów: agenci AI do QA i dostarczania zmian, design system, wielomarkowe strony sprzedażowe home.pl, sklepy na WordPressie i strony statyczne."><meta property="og:image" content="https://lukaszmoszczynski.github.io/portfolio-preview/og.png"><meta property="og:type" content="website"><meta property="og:locale" content="pl_PL"><meta name="twitter:card" content="summary_large_image"><script>
+      (function () {
+        // `current`: the page being replaced on a client-side navigation. When storage can't be
+        // read, its theme and pause choice carry over, so they last until the next full load.
+        var apply = function (target, current) {
+          var stored = null;
+          var paused = false;
+          try {
+            stored = localStorage.getItem('theme');
+            // "Pause animations" (motion-pause.ts): remembered across pages and visits.
+            paused = localStorage.getItem('motion-paused') === '1';
+          } catch (error) {
+            if (current) {
+              stored = current.dataset.theme;
+              paused = current.classList.contains('motion-paused');
+            }
+          }
+          // Dark unless the reader chose light (resolveTheme in theme.ts); the OS setting is not consulted.
+          target.dataset.theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
+          target.classList.toggle('motion-paused', paused);
+          // `js`: scripts run, so CSS may hide controls that only JS can reach elsewhere (the menu).
+          target.classList.add('js');
+        };
+        // `motion`: animations may run, so CSS shows their start states from the first paint.
+        // `init-pending`: removed by lifecycle.ts once every section has set itself up.
+        // The timer is a safety net: if a script fails, nothing stays hidden for more than 3 s.
+        var timer;
+        var mark = function (target) {
+          if (!matchMedia('(prefers-reduced-motion: reduce)').matches) target.classList.add('motion');
+          target.classList.add('init-pending');
+          clearTimeout(timer);
+          timer = setTimeout(function () {
+            document.documentElement.classList.remove('init-pending');
+          }, 3000);
+        };
+        apply(document.documentElement);
+        mark(document.documentElement);
+        document.addEventListener('astro:before-swap', function (event) {
+          apply(event.newDocument.documentElement, document.documentElement);
+          mark(event.newDocument.documentElement);
+        });
+      })();
+    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/portfolio-preview/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CKq7OsbX.js"></script><link rel="stylesheet" href="/portfolio-preview/_astro/BaseLayout.Bq7gD_m2.css"><style>.work-index[data-astro-cid-j4bypcfc]{padding-block:120px 96px}h1[data-astro-cid-j4bypcfc]{font-family:var(--font-display);letter-spacing:-.045em;margin:0 0 16px;font-size:clamp(34px,5vw,72px);font-weight:800;line-height:1}.work-index-intro[data-astro-cid-j4bypcfc]{color:var(--muted);max-width:56ch;margin:0 0 48px;font-size:clamp(17px,1.6vw,20px)}.work-index-grid[data-astro-cid-j4bypcfc]{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin:0;padding:0;list-style:none;display:grid}.work-index-card[data-astro-cid-j4bypcfc]{background:var(--surface);box-shadow:0 0 0 1px var(--line), 0 40px 80px -40px #140a2873;border-radius:28px;grid-template-rows:auto 1fr;gap:20px;padding:clamp(18px,2.4vw,28px);transition:box-shadow .3s,transform .3s;display:grid;position:relative}.work-index-card[data-astro-cid-j4bypcfc]:hover{box-shadow:0 0 0 1px var(--accent), 0 40px 80px -40px #140a2873;transform:translateY(-3px)}.work-index-card[data-astro-cid-j4bypcfc]:has(:focus-visible){outline:3px solid var(--focus-ring);outline-offset:3px}.work-index-meta[data-astro-cid-j4bypcfc]{letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0;font-size:13px;font-weight:600;display:flex}.work-index-client[data-astro-cid-j4bypcfc]{font:500 12px/1 var(--font-mono);letter-spacing:0;text-transform:none;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line);background:var(--bg);border-radius:999px;padding:5px 9px}h2[data-astro-cid-j4bypcfc]{font-family:var(--font-display);letter-spacing:-.03em;overflow-wrap:break-word;hyphens:auto;text-wrap:balance;margin:8px 0 10px;font-size:clamp(22px,2.2vw,30px);font-weight:700;line-height:1.1}h2[data-astro-cid-j4bypcfc] a[data-astro-cid-j4bypcfc]{color:var(--ink);text-decoration:none}h2[data-astro-cid-j4bypcfc] a[data-astro-cid-j4bypcfc]:after{content:"";border-radius:inherit;position:absolute;inset:0}h2[data-astro-cid-j4bypcfc] a[data-astro-cid-j4bypcfc]:focus-visible{outline:none}.work-index-card[data-astro-cid-j4bypcfc]:hover h2[data-astro-cid-j4bypcfc] a[data-astro-cid-j4bypcfc]{color:var(--accent-display)}.work-index-summary[data-astro-cid-j4bypcfc]{color:var(--muted);margin:0 0 16px;font-size:16px}.work-index-tags[data-astro-cid-j4bypcfc]{flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none;display:flex}.work-index-tags[data-astro-cid-j4bypcfc] li[data-astro-cid-j4bypcfc]{font:500 12px/1 var(--font-mono);box-shadow:inset 0 0 0 1px var(--line);background:var(--bg);border-radius:999px;padding:8px 11px}@media (width<=860px){.work-index[data-astro-cid-j4bypcfc]{padding-block:88px 64px}.work-index-intro[data-astro-cid-j4bypcfc]{margin-bottom:32px}.work-index-grid[data-astro-cid-j4bypcfc]{grid-template-columns:minmax(0,1fr);gap:20px}.work-index-card[data-astro-cid-j4bypcfc]{border-radius:22px}}@media (prefers-reduced-motion:reduce){.work-index-card[data-astro-cid-j4bypcfc]{transition:none}.work-index-card[data-astro-cid-j4bypcfc]:hover{transform:none}}
+</style><link rel="stylesheet" href="/portfolio-preview/_astro/ProjectVisual.CrQejD8I.css"><style>[data-astro-transition-scope="astro-d2z2izwc-1"] { view-transition-name: visual-qa-agent; }@layer astro { ::view-transition-old(visual-qa-agent) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(visual-qa-agent) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(visual-qa-agent) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(visual-qa-agent) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-d2z2izwc-2"] { view-transition-name: visual-human-in-the-loop; }@layer astro { ::view-transition-old(visual-human-in-the-loop) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(visual-human-in-the-loop) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(visual-human-in-the-loop) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(visual-human-in-the-loop) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-d2z2izwc-3"] { view-transition-name: visual-design-system; }@layer astro { ::view-transition-old(visual-design-system) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(visual-design-system) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(visual-design-system) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(visual-design-system) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-3"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-3"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-d2z2izwc-4"] { view-transition-name: visual-multi-brand-sites; }@layer astro { ::view-transition-old(visual-multi-brand-sites) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(visual-multi-brand-sites) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(visual-multi-brand-sites) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(visual-multi-brand-sites) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-4"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-4"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-d2z2izwc-5"] { view-transition-name: visual-wordpress-shop; }@layer astro { ::view-transition-old(visual-wordpress-shop) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(visual-wordpress-shop) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(visual-wordpress-shop) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(visual-wordpress-shop) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-5"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-5"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-d2z2izwc-6"] { view-transition-name: visual-figma-to-wordpress; }@layer astro { ::view-transition-old(visual-figma-to-wordpress) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(visual-figma-to-wordpress) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(visual-figma-to-wordpress) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(visual-figma-to-wordpress) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-6"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-6"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-d2z2izwc-7"] { view-transition-name: visual-company-website; }@layer astro { ::view-transition-old(visual-company-website) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(visual-company-website) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(visual-company-website) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(visual-company-website) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-7"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-7"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-7"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-7"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-d2z2izwc-7"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-d2z2izwc-7"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-d2z2izwc-7"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-d2z2izwc-7"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body data-cursor-open="Otwórz" data-cursor-drag="Przeciągnij"><div data-astro-transition-persist="background" class="background" aria-hidden="true"><div class="grid-layer"></div><div class="light-layer"><div class="glow glow-a"></div><div class="glow glow-b"></div></div></div><script type="module" src="/portfolio-preview/_astro/Background.astro_astro_type_script_index_0_lang.DjlapQKC.js"></script><div data-astro-transition-persist="cursor" class="cursor" aria-hidden="true"><div class="cursor-ring"><span class="cursor-shape"></span><span class="cursor-ticks"><i></i><i></i><i></i><i></i></span><span class="cursor-label"></span></div><div class="cursor-dot"></div></div><script type="module" src="/portfolio-preview/_astro/Cursor.astro_astro_type_script_index_0_lang.DmizTz1A.js"></script><a class="skip-link" href="#main">Przejdź do treści</a><header class="bar"><!-- Wordmark: the full name on every width (phones keep only it and the menu button). The name is the visible text plus ", home" (WCAG 2.5.3). --><a class="logo" href="/portfolio-preview/pl/"><span class="logo-text fx-underline"><span class="logo-full">Łukasz Moszczyński</span><span class="visually-hidden">, strona główna</span></span></a><div class="bar-tools"><!--
+  Segmented EN | PL: the whole pill is one link to the other language (works without JS).
+  The link's text is the target language. The current language under the thumb is a state
+  marker drawn from data-label (CSS), so the name "PL – Zmień język na polski" holds all
+  of the link's text (WCAG 2.5.3 label in name).
+--><a class="seg lang-seg" data-current="pl" href="/portfolio-preview/work/" hreflang="en" lang="en" data-lang-switch aria-label="EN – Switch language to English"><span class="seg-thumb" aria-hidden="true"></span><span class="seg-option is-target" lang="en">EN</span><span class="seg-option is-current" data-label="PL" aria-hidden="true"></span></a><button type="button" class="seg theme-seg" role="switch" aria-checked="false" data-theme-toggle aria-label="Tryb ciemny"><span class="seg-thumb" aria-hidden="true"></span><span class="seg-option" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><circle cx="12" cy="12" r="4.5" fill="currentColor"></circle><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></g></svg></span><span class="seg-option" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z" fill="currentColor"></path></svg></span></button><script type="module" src="/portfolio-preview/_astro/ThemeToggle.astro_astro_type_script_index_0_lang.DpAi-Aay.js"></script><button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu"><span class="menu-lines" aria-hidden="true"><span></span><span></span><span></span></span><span class="menu-toggle-text">Menu</span></button></div><noscript><!-- Without JS the menu cannot open: the same links as a plain row. --><style>.menu-toggle { display: none !important }</style><nav class="nav-plain" aria-label="Główna"><a href="/portfolio-preview/pl/#work">Projekty</a><a href="/portfolio-preview/pl/#contact">Kontakt</a><a href="/portfolio-preview/pl/work/">Wszystkie projekty</a></nav></noscript><!-- Not aria-modal: the close button lives in the header bar, outside the panel. header.ts makes the page behind inert instead. --><div class="site-menu" id="site-menu" role="dialog" aria-label="Menu" hidden><nav class="site-menu-in wrap" aria-label="Główna"><ul class="menu-main"><li><a class="menu-link" href="/portfolio-preview/pl/#work"><span class="menu-link-text">Projekty</span></a></li><li><a class="menu-link" href="/portfolio-preview/pl/#contact"><span class="menu-link-text">Kontakt</span></a></li><li><a class="menu-link" href="/portfolio-preview/pl/work/"><span class="menu-link-text">Wszystkie projekty</span></a></li></ul><p class="menu-sub">Case studies</p><ul class="menu-projects"><li><a href="/portfolio-preview/pl/work/qa-agent/">Agent QA</a></li><li><a href="/portfolio-preview/pl/work/human-in-the-loop/">Człowiek w pętli</a></li><li><a href="/portfolio-preview/pl/work/design-system/">Design system</a></li><li><a href="/portfolio-preview/pl/work/multi-brand-sites/">Strony wielu marek</a></li><li><a href="/portfolio-preview/pl/work/wordpress-shop/">Sklep WordPress</a></li><li><a href="/portfolio-preview/pl/work/figma-to-wordpress/">Figma → WordPress</a></li><li><a href="/portfolio-preview/pl/work/company-website/">Strona firmowa</a></li></ul><!-- The header's language and theme switches live here too: the header copies hide while the menu is open and on phones. --><div class="menu-tools" role="group" aria-label="Język, motyw i animacje"><!--
+  Segmented EN | PL: the whole pill is one link to the other language (works without JS).
+  The link's text is the target language. The current language under the thumb is a state
+  marker drawn from data-label (CSS), so the name "PL – Zmień język na polski" holds all
+  of the link's text (WCAG 2.5.3 label in name).
+--><a class="seg lang-seg" data-current="pl" href="/portfolio-preview/work/" hreflang="en" lang="en" data-lang-switch aria-label="EN – Switch language to English"><span class="seg-thumb" aria-hidden="true"></span><span class="seg-option is-target" lang="en">EN</span><span class="seg-option is-current" data-label="PL" aria-hidden="true"></span></a><button type="button" class="seg theme-seg" role="switch" aria-checked="false" data-theme-toggle aria-label="Tryb ciemny"><span class="seg-thumb" aria-hidden="true"></span><span class="seg-option" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><circle cx="12" cy="12" r="4.5" fill="currentColor"></circle><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></g></svg></span><span class="seg-option" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z" fill="currentColor"></path></svg></span></button><!--
+  "Pause animations" (WCAG 2.2.2). Pressed = paused. Hidden until motion-toggle.ts shows it:
+  without JS or with reduced motion nothing moves on its own, so there is nothing to pause.
+--><button type="button" class="motion-toggle motion-toggle-menu" aria-pressed="false" data-motion-toggle hidden><span class="motion-toggle-icon" aria-hidden="true"><i></i><i></i></span><span>Wstrzymaj animacje</span></button></div></nav></div></header><script type="module" src="/portfolio-preview/_astro/Header.astro_astro_type_script_index_0_lang.HfUWfXtG.js"></script><!-- tabindex -1: the skip link moves keyboard focus here, not only the scroll position. --><main id="main" class="wrap" tabindex="-1"><section class="work-index" aria-labelledby="work-index-title" data-astro-cid-j4bypcfc><h1 id="work-index-title" data-astro-cid-j4bypcfc>Projekty</h1><p class="work-index-intro" data-astro-cid-j4bypcfc>Siedem projektów: agenci AI do QA i dostarczania zmian, design system, wielomarkowe strony sprzedażowe home.pl, sklepy na WordPressie i strony statyczne.</p><ul class="work-index-grid" data-astro-cid-j4bypcfc><li class="work-index-card" data-astro-cid-j4bypcfc><div data-astro-transition-scope="astro-d2z2izwc-1" class="project-visual is-compact" data-visual="qa-agent" aria-hidden="true" data-astro-cid-utabsd57><div class="project-screen v-qa-agent" data-astro-cid-utabsd57><span class="shot" style="inset: 9% 53% 34% 7%" data-astro-cid-utabsd57><i style="inset: 10% 12% 78% 12%" data-astro-cid-utabsd57></i><i style="inset: 30% 12% 40% 12%" data-astro-cid-utabsd57></i><i style="inset: 70% 40% 12% 12%" data-astro-cid-utabsd57></i><b class="qa-scan" data-astro-cid-utabsd57></b></span><span class="shot" style="inset: 9% 7% 34% 53%" data-astro-cid-utabsd57><i style="inset: 10% 12% 78% 12%" data-astro-cid-utabsd57></i><i class="qa-changed" style="inset: 30% 30% 40% 12%" data-astro-cid-utabsd57></i><i style="inset: 70% 40% 12% 12%" data-astro-cid-utabsd57></i><em class="qa-box" style="inset: 26% 6% 36% 6%" data-astro-cid-utabsd57></em><b class="qa-scan" data-astro-cid-utabsd57></b></span><span class="check qa-row" style="inset: 72% 40% 21% 7%" data-astro-cid-utabsd57><b class="qa-fill" data-astro-cid-utabsd57></b><b class="qa-dot" data-astro-cid-utabsd57>✓</b></span><span class="check qa-row" style="inset: 81% 52% 12% 7%" data-astro-cid-utabsd57><b class="qa-fill" data-astro-cid-utabsd57></b><b class="qa-dot warn" data-astro-cid-utabsd57>!</b></span><span class="check qa-mr" style="inset: 72% 7% 12% 64%" data-astro-cid-utabsd57><b class="qa-fill" data-astro-cid-utabsd57></b><b class="qa-mr-label" data-astro-cid-utabsd57>1 różnica</b></span></div></div><div class="work-index-copy" data-astro-cid-j4bypcfc><p class="work-index-meta" data-astro-cid-j4bypcfc><span data-astro-cid-j4bypcfc>AI · testy · automatyzacja</span><span class="work-index-client" data-astro-cid-j4bypcfc>home.pl</span></p><h2 data-astro-cid-j4bypcfc><a href="/portfolio-preview/pl/work/qa-agent/" data-astro-cid-j4bypcfc>Agent AI do testów merge requestów</a></h2><p class="work-index-summary" data-astro-cid-j4bypcfc>Agent AI, który do nowej funkcji pisze scenariusze testów i specy Playwright, porównuje gałąź z masterem i zostawia wynik w merge requeście.</p><ul class="work-index-tags" aria-label="Tagi" data-astro-cid-j4bypcfc><li data-astro-cid-j4bypcfc>Claude</li><li data-astro-cid-j4bypcfc>Playwright</li><li data-astro-cid-j4bypcfc>GitLab</li><li data-astro-cid-j4bypcfc>Testy wizualne</li></ul></div></li><li class="work-index-card" data-astro-cid-j4bypcfc><div data-astro-transition-scope="astro-d2z2izwc-2" class="project-visual is-compact" data-visual="human-in-the-loop" aria-hidden="true" data-astro-cid-utabsd57><div class="project-screen v-human-in-the-loop" data-astro-cid-utabsd57><div class="loop-board" data-astro-cid-utabsd57><svg class="loop-diagram" viewBox="120 65 320 320" aria-hidden="true" focusable="false" data-origin="280 225" data-radius="130" data-astro-cid-5rfea5ym><circle class="factory-ring" cx="280" cy="225" r="130" data-astro-cid-5rfea5ym></circle><circle class="factory-hub" data-stage="clean" cx="280" cy="225" r="46" data-astro-cid-5rfea5ym></circle><circle class="factory-node" data-stage="label" cx="280" cy="95" r="12" data-astro-cid-5rfea5ym></circle><circle class="factory-node is-factory" data-stage="factory" cx="392.6" cy="160" r="17" data-astro-cid-5rfea5ym></circle><circle class="factory-node" data-stage="push" cx="392.6" cy="290" r="12" data-astro-cid-5rfea5ym></circle><circle class="factory-node" data-stage="review" cx="280" cy="355" r="12" data-astro-cid-5rfea5ym></circle><circle class="factory-node" data-stage="comments" cx="167.4" cy="290" r="12" data-astro-cid-5rfea5ym></circle><circle class="factory-node" data-stage="fix" cx="167.4" cy="160" r="12" data-astro-cid-5rfea5ym></circle><g class="loop-lights" data-astro-cid-5rfea5ym><circle class="loop-lit" data-lit="label" cx="280" cy="95" r="12" data-astro-cid-5rfea5ym></circle><circle class="loop-lit" data-lit="factory" cx="392.6" cy="160" r="17" data-astro-cid-5rfea5ym></circle><circle class="loop-lit" data-lit="push" cx="392.6" cy="290" r="12" data-astro-cid-5rfea5ym></circle><circle class="loop-lit" data-lit="review" cx="280" cy="355" r="12" data-astro-cid-5rfea5ym></circle><circle class="loop-lit" data-lit="comments" cx="167.4" cy="290" r="12" data-astro-cid-5rfea5ym></circle><circle class="loop-lit" data-lit="fix" cx="167.4" cy="160" r="12" data-astro-cid-5rfea5ym></circle><circle class="loop-lit is-hub" data-lit="clean" cx="280" cy="225" r="46" data-astro-cid-5rfea5ym></circle></g><g class="factory-arm" data-astro-cid-5rfea5ym><rect class="factory-ticket" x="265" y="215" width="30" height="20" rx="5" data-astro-cid-5rfea5ym></rect></g></svg></div></div></div><div class="work-index-copy" data-astro-cid-j4bypcfc><p class="work-index-meta" data-astro-cid-j4bypcfc><span data-astro-cid-j4bypcfc>AI · agenci · proces</span><span class="work-index-client" data-astro-cid-j4bypcfc>home.pl</span></p><h2 data-astro-cid-j4bypcfc><a href="/portfolio-preview/pl/work/human-in-the-loop/" data-astro-cid-j4bypcfc>Automatyczny proces z człowiekiem w pętli</a></h2><p class="work-index-summary" data-astro-cid-j4bypcfc>Etykieta w Jirze przekazuje zadanie agentom w kontenerze Dockera. Rozwiązują je i w pętli poprawiają uwagi z review, aż będzie czyste, a potem człowiek przegląda pracę i ją merguje.</p><ul class="work-index-tags" aria-label="Tagi" data-astro-cid-j4bypcfc><li data-astro-cid-j4bypcfc>Claude</li><li data-astro-cid-j4bypcfc>Skille</li><li data-astro-cid-j4bypcfc>Agenci</li><li data-astro-cid-j4bypcfc>Docker</li><li data-astro-cid-j4bypcfc>GitLab</li><li data-astro-cid-j4bypcfc>Jira</li><li data-astro-cid-j4bypcfc>Code review</li></ul></div></li><li class="work-index-card" data-astro-cid-j4bypcfc><div data-astro-transition-scope="astro-d2z2izwc-3" class="project-visual is-compact" data-visual="design-system" aria-hidden="true" data-astro-cid-utabsd57><div class="project-screen v-design-system" data-astro-cid-utabsd57><span class="ds-brand" data-astro-cid-utabsd57></span><span class="shape swatch dark" style="inset: 10% 74% 68% 8%" data-astro-cid-utabsd57></span><span class="shape swatch" style="inset: 10% 52% 68% 30%" data-astro-cid-utabsd57></span><span class="shape swatch ink" style="inset: 10% 30% 68% 52%" data-astro-cid-utabsd57></span><span class="shape swatch violet" style="inset: 10% 8% 68% 74%" data-astro-cid-utabsd57></span><b class="ds-drop" style="left: 26%; top: 45.3%" data-from="275 -506" data-astro-cid-utabsd57></b><b class="ds-drop ink" style="left: 71%; top: 45.3%" data-from="-300 -506" data-astro-cid-utabsd57></b><span class="shape pill ds-atom-pill" style="inset: 42% 52% 46% 8%" data-astro-cid-utabsd57></span><span class="shape dark pill ds-atom-pill" style="inset: 42% 8% 46% 54%" data-astro-cid-utabsd57></span><span class="ds-page" style="inset: 60% 4% 5% 4%" data-astro-cid-utabsd57></span><span class="shape ds-card" style="inset: 64% 8% 10% 8%" data-astro-cid-utabsd57><i class="ds-atom dark" style="inset: 30.8% 61.9% 30.8% 7.1%" data-astro-cid-utabsd57></i><i class="ds-atom accent" style="inset: 36% 34% 36% 44%" data-astro-cid-utabsd57></i></span></div></div><div class="work-index-copy" data-astro-cid-j4bypcfc><p class="work-index-meta" data-astro-cid-j4bypcfc><span data-astro-cid-j4bypcfc>Tokeny · komponenty · Storybook</span></p><h2 data-astro-cid-j4bypcfc><a href="/portfolio-preview/pl/work/design-system/" data-astro-cid-j4bypcfc>Wielomarkowy design system zsynchronizowany z Figmą</a></h2><p class="work-index-summary" data-astro-cid-j4bypcfc>Design system dla wielu marek, w którym źródłem prawdy są zmienne w Figmie, a z nich powstają tokeny CSS, komponenty HTML/CSS/JS i Storybook na GitHub Pages.</p><ul class="work-index-tags" aria-label="Tagi" data-astro-cid-j4bypcfc><li data-astro-cid-j4bypcfc>Design tokens</li><li data-astro-cid-j4bypcfc>Figma</li><li data-astro-cid-j4bypcfc>Style Dictionary</li><li data-astro-cid-j4bypcfc>Storybook</li><li data-astro-cid-j4bypcfc>CSS</li><li data-astro-cid-j4bypcfc>JavaScript</li><li data-astro-cid-j4bypcfc>GSAP</li></ul></div></li><li class="work-index-card" data-astro-cid-j4bypcfc><div data-astro-transition-scope="astro-d2z2izwc-4" class="project-visual is-compact" data-visual="multi-brand-sites" aria-hidden="true" data-astro-cid-utabsd57><div class="project-screen v-multi-brand-sites" data-astro-cid-utabsd57><span class="hp-cms" style="inset: 12% 74% 12% 6%" data-astro-cid-utabsd57></span><span class="hp-section" style="inset: 18% 77% 70% 9%" data-astro-cid-utabsd57></span><span class="hp-section" style="inset: 34% 77% 54% 9%" data-astro-cid-utabsd57></span><span class="hp-section" style="inset: 50% 77% 38% 9%" data-astro-cid-utabsd57></span><span class="hp-section" style="inset: 66% 77% 22% 9%" data-astro-cid-utabsd57></span><span class="hp-page" style="inset: 8% 28% 8% 32%" data-astro-cid-utabsd57></span><span class="hp-bar" style="inset: 12% 31% 82% 35%" data-astro-cid-utabsd57><i class="hp-tint" data-brand="0" style="background: #eb6126" data-astro-cid-utabsd57></i><i class="hp-tint" data-brand="1" style="background: #2f6fe4" data-astro-cid-utabsd57></i><i class="hp-tint" data-brand="2" style="background: #16a37f" data-astro-cid-utabsd57></i><i class="hp-tint" data-brand="3" style="background: #c2367a" data-astro-cid-utabsd57></i></span><span class="hp-slot" style="inset: 21% 31% 57% 35%" data-from="-76.471 -13.636 0.412 0.545" data-astro-cid-utabsd57><b class="hp-cta" data-astro-cid-utabsd57><i class="hp-tint" data-brand="0" style="background: #eb6126" data-astro-cid-utabsd57></i><i class="hp-tint" data-brand="1" style="background: #2f6fe4" data-astro-cid-utabsd57></i><i class="hp-tint" data-brand="2" style="background: #16a37f" data-astro-cid-utabsd57></i><i class="hp-tint" data-brand="3" style="background: #c2367a" data-astro-cid-utabsd57></i></b></span><span class="hp-slot" style="inset: 46% 31% 42% 35%" data-from="-76.471 -100 0.412 1" data-astro-cid-utabsd57></span><span class="hp-slot" style="inset: 61% 31% 27% 35%" data-from="-76.471 -91.667 0.412 1" data-astro-cid-utabsd57></span><span class="hp-slot" style="inset: 76% 31% 14% 35%" data-from="-76.471 -100 0.412 1.2" data-astro-cid-utabsd57></span><span class="hp-mini" style="inset: 14% 4% 56% 75%; transform: rotate(6deg)" data-turn="6" data-astro-cid-utabsd57><i style="inset: 14% 12% 70% 12%" data-astro-cid-utabsd57></i><i style="inset: 38% 30% 46% 12%" data-astro-cid-utabsd57></i><i class="hp-mini-accent" style="inset: 66% 12% 14% 12%" data-astro-cid-utabsd57></i></span><span class="hp-mini" style="inset: 52% 5% 16% 74%; transform: rotate(-5deg)" data-turn="-5" data-astro-cid-utabsd57><i class="hp-mini-option hp-mini-accent" style="inset: 14% 12% 66% 12%" data-astro-cid-utabsd57></i><i class="hp-mini-option" style="inset: 42% 12% 38% 12%" data-astro-cid-utabsd57></i><i class="hp-mini-option" style="inset: 70% 12% 10% 12%" data-astro-cid-utabsd57></i></span></div></div><div class="work-index-copy" data-astro-cid-j4bypcfc><p class="work-index-meta" data-astro-cid-j4bypcfc><span data-astro-cid-j4bypcfc>Gatsby · CMS · wiele marek</span><span class="work-index-client" data-astro-cid-j4bypcfc>home.pl</span></p><h2 data-astro-cid-j4bypcfc><a href="/portfolio-preview/pl/work/multi-brand-sites/" data-astro-cid-j4bypcfc>Wielomarkowe strony sprzedażowe z jednego kreatora stron</a></h2><p class="work-index-summary" data-astro-cid-j4bypcfc>Strony sprzedażowe 8 marek grupy hostingowej: ponad 700 landing pages, które użytkownicy składają z gotowych sekcji w CMS-ie, a buduje je Gatsby.</p><ul class="work-index-tags" aria-label="Tagi" data-astro-cid-j4bypcfc><li data-astro-cid-j4bypcfc>Gatsby</li><li data-astro-cid-j4bypcfc>GraphQL</li><li data-astro-cid-j4bypcfc>Squidex</li><li data-astro-cid-j4bypcfc>React</li><li data-astro-cid-j4bypcfc>Redux</li><li data-astro-cid-j4bypcfc>styled-components</li><li data-astro-cid-j4bypcfc>Tailwind</li><li data-astro-cid-j4bypcfc>Storybook</li><li data-astro-cid-j4bypcfc>Weblate</li><li data-astro-cid-j4bypcfc>Playwright</li><li data-astro-cid-j4bypcfc>Vitest</li><li data-astro-cid-j4bypcfc>Biome</li><li data-astro-cid-j4bypcfc>Multi-brand</li></ul></div></li><li class="work-index-card" data-astro-cid-j4bypcfc><div data-astro-transition-scope="astro-d2z2izwc-5" class="project-visual is-compact" data-visual="wordpress-shop" aria-hidden="true" data-astro-cid-utabsd57><div class="project-screen v-wordpress-shop" data-astro-cid-utabsd57><span class="shape soft" style="inset: 7% 7% 86% 7%" data-astro-cid-utabsd57></span><span class="shape" style="inset: 20% 46% 66% 7%" data-astro-cid-utabsd57></span><span class="shape" style="inset: 37% 60% 58% 7%; opacity: .6" data-astro-cid-utabsd57></span><span class="shape accent pill dcc-buy" style="inset: 47% 72% 45% 7%" data-astro-cid-utabsd57></span><span class="dcc-pay" style="inset: 49.5% 40% 47.5% 32%" data-astro-cid-utabsd57><i class="dcc-pay-fill" data-astro-cid-utabsd57></i></span><span class="shape card dcc-card" style="inset: 62% 66% 8% 7%" data-astro-cid-utabsd57><i data-astro-cid-utabsd57></i></span><span class="shape card dcc-card" style="inset: 62% 37% 8% 36%" data-astro-cid-utabsd57><i data-astro-cid-utabsd57></i></span><span class="shape card dcc-card" style="inset: 62% 8% 8% 65%" data-astro-cid-utabsd57><i data-astro-cid-utabsd57></i></span><span class="ticket dcc-voucher" style="inset: 18% 8% 54% 60%" data-astro-cid-utabsd57><b data-astro-cid-utabsd57>PDF</b></span></div></div><div class="work-index-copy" data-astro-cid-j4bypcfc><p class="work-index-meta" data-astro-cid-j4bypcfc><span data-astro-cid-j4bypcfc>WordPress · sklep · płatności</span></p><h2 data-astro-cid-j4bypcfc><a href="/portfolio-preview/pl/work/wordpress-shop/" data-astro-cid-j4bypcfc>Sklep WordPress z płatnościami online</a></h2><p class="work-index-summary" data-astro-cid-j4bypcfc>Motyw blokowy WordPressa zbudowany z Figmy dla firmy szkoleniowej, ze sklepem WooCommerce, własną wtyczką płatności Przelewy24 i e-voucherami w PDF.</p><ul class="work-index-tags" aria-label="Tagi" data-astro-cid-j4bypcfc><li data-astro-cid-j4bypcfc>WordPress</li><li data-astro-cid-j4bypcfc>WooCommerce</li><li data-astro-cid-j4bypcfc>PHP</li><li data-astro-cid-j4bypcfc>Przelewy24</li><li data-astro-cid-j4bypcfc>GSAP</li><li data-astro-cid-j4bypcfc>Swup</li><li data-astro-cid-j4bypcfc>Playwright</li></ul></div></li><li class="work-index-card" data-astro-cid-j4bypcfc><div data-astro-transition-scope="astro-d2z2izwc-6" class="project-visual is-compact" data-visual="figma-to-wordpress" aria-hidden="true" data-astro-cid-utabsd57><div class="project-screen v-figma-to-wordpress" data-astro-cid-utabsd57><span class="frame" style="inset: 12% 58% 12% 7%" data-astro-cid-utabsd57><i class="wp-source" style="inset: 6% 8% 70% 8%" data-astro-cid-utabsd57></i><i class="wp-source accent" style="inset: 36% 8% 40% 8%" data-astro-cid-utabsd57></i><i class="wp-source" style="inset: 66% 8% 6% 8%" data-astro-cid-utabsd57></i></span><svg class="arrow" viewBox="0 0 400 300" preserveAspectRatio="none" data-astro-cid-utabsd57><path d="M176 150 H222" data-astro-cid-utabsd57></path><path d="M212 140 L224 150 L212 160" data-astro-cid-utabsd57></path></svg><span class="shape page" style="inset: 12% 7% 12% 58%" data-astro-cid-utabsd57><i class="wp-block" style="inset: 6% 8% 70% 8%" data-astro-cid-utabsd57><b class="wp-skin" data-astro-cid-utabsd57></b></i><i class="wp-block accent" style="inset: 36% 8% 40% 8%" data-astro-cid-utabsd57><b class="wp-skin" data-astro-cid-utabsd57></b></i><i class="wp-block" style="inset: 66% 8% 6% 8%" data-astro-cid-utabsd57><b class="wp-skin" data-astro-cid-utabsd57></b></i></span></div></div><div class="work-index-copy" data-astro-cid-j4bypcfc><p class="work-index-meta" data-astro-cid-j4bypcfc><span data-astro-cid-j4bypcfc>WordPress · Figma · automatyzacja</span></p><h2 data-astro-cid-j4bypcfc><a href="/portfolio-preview/pl/work/figma-to-wordpress/" data-astro-cid-j4bypcfc>Starter Figma → WordPress</a></h2><p class="work-index-summary" data-astro-cid-j4bypcfc>Narzędzie, które czyta plik strony w Figmie zbudowany z mojej biblioteki komponentów i zamienia go w działającą lokalną stronę WordPress z komponentami i tokenami marki z design systemu.</p><ul class="work-index-tags" aria-label="Tagi" data-astro-cid-j4bypcfc><li data-astro-cid-j4bypcfc>WordPress</li><li data-astro-cid-j4bypcfc>Figma</li><li data-astro-cid-j4bypcfc>Claude Code</li><li data-astro-cid-j4bypcfc>Docker</li><li data-astro-cid-j4bypcfc>Node.js</li><li data-astro-cid-j4bypcfc>Playwright</li></ul></div></li><li class="work-index-card" data-astro-cid-j4bypcfc><div data-astro-transition-scope="astro-d2z2izwc-7" class="project-visual is-compact" data-visual="company-website" aria-hidden="true" data-astro-cid-utabsd57><div class="project-screen v-company-website" data-astro-cid-utabsd57><svg class="lines" viewBox="0 0 400 300" preserveAspectRatio="none" data-astro-cid-utabsd57><path d="M150 66 C200 66 200 150 244 150" data-astro-cid-utabsd57></path><path d="M150 150 H244" data-astro-cid-utabsd57></path><path d="M150 234 C200 234 200 150 244 150" data-astro-cid-utabsd57></path><path class="om-packet" pathLength="100" d="M150 66 C200 66 200 150 244 150" data-astro-cid-utabsd57></path><path class="om-packet" pathLength="100" d="M150 150 H244" data-astro-cid-utabsd57></path><path class="om-packet" pathLength="100" d="M150 234 C200 234 200 150 244 150" data-astro-cid-utabsd57></path></svg><span class="shape pill domain" style="inset: 17% 63% 72% 7%" data-astro-cid-utabsd57></span><span class="shape pill domain" style="inset: 45% 63% 45% 7%; opacity: .8" data-astro-cid-utabsd57></span><span class="shape pill domain" style="inset: 73% 63% 17% 7%; opacity: .65" data-astro-cid-utabsd57></span><span class="om-301" style="left: 50%; top: 70%" data-astro-cid-utabsd57>301</span><span class="shape page" style="inset: 14% 7% 14% 61%" data-astro-cid-utabsd57><i class="om-block dark" style="inset: 6% 8% 78% 8%" data-astro-cid-utabsd57></i><i class="om-block accent" style="inset: 28% 30% 52% 8%" data-astro-cid-utabsd57></i><i class="om-block" style="inset: 54% 8% 34% 8%" data-astro-cid-utabsd57></i><i class="om-block" style="inset: 70% 26% 20% 8%" data-astro-cid-utabsd57></i></span></div></div><div class="work-index-copy" data-astro-cid-j4bypcfc><p class="work-index-meta" data-astro-cid-j4bypcfc><span data-astro-cid-j4bypcfc>Astro · strona statyczna</span></p><h2 data-astro-cid-j4bypcfc><a href="/portfolio-preview/pl/work/company-website/" data-astro-cid-j4bypcfc>Szybka statyczna strona firmowa</a></h2><p class="work-index-summary" data-astro-cid-j4bypcfc>Szybka statyczna strona w Astro dla firmy zarządzającej nieruchomościami, z kilkoma domenami przekierowanymi na jeden adres i paczką gotową do wgrania na hosting klienta.</p><ul class="work-index-tags" aria-label="Tagi" data-astro-cid-j4bypcfc><li data-astro-cid-j4bypcfc>Astro</li><li data-astro-cid-j4bypcfc>TypeScript</li><li data-astro-cid-j4bypcfc>SEO</li><li data-astro-cid-j4bypcfc>Dostępność</li><li data-astro-cid-j4bypcfc>Playwright</li></ul></div></li></ul></section></main><footer class="site-footer wrap" data-astro-cid-jo6i4kqk><p data-astro-cid-jo6i4kqk>© 2026 Łukasz Moszczyński</p><p data-astro-cid-jo6i4kqk>Zgodna z WCAG 2.2 AA</p><!--
+  "Pause animations" (WCAG 2.2.2). Pressed = paused. Hidden until motion-toggle.ts shows it:
+  without JS or with reduced motion nothing moves on its own, so there is nothing to pause.
+--><button type="button" class="motion-toggle motion-toggle-footer" aria-pressed="false" data-motion-toggle hidden><span class="motion-toggle-icon" aria-hidden="true"><i></i><i></i></span><span>Wstrzymaj animacje</span></button></footer></body></html><script type="module" src="/portfolio-preview/_astro/BaseLayout.astro_astro_type_script_index_0_lang.BnYb2nL2.js"></script>
